@@ -15,8 +15,8 @@
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background-color: #f7f7f7; /* 明るい背景 */
+            color: #e0e0e0; /* 変更: 明るいテキスト色 */
+            background-color: #1e1e1e; /* 変更: 濃い背景色 */
         }
 
         /* コンテナの基本設定 */
@@ -28,8 +28,8 @@
 
         /* ヘッダー */
         header {
-            background-color: #ffffff; /* 白いヘッダー */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            background-color: #2d2d30; /* 変更: 暗いヘッダー色 */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); /* 変更: 影を濃く */
             padding: 15px 0;
             position: sticky;
             top: 0;
@@ -45,7 +45,7 @@
         .logo {
             font-size: 1.5em;
             font-weight: bold;
-            color: #1a73e8; /* ブランドカラー */
+            color: #00cc99; /* 変更: ブランドカラーをティールグリーンに */
             text-decoration: none;
         }
 
@@ -60,28 +60,28 @@
 
         nav ul li a {
             text-decoration: none;
-            color: #555;
+            color: #b0b0b0; /* 変更: ナビリンクの色を調整 */
             font-weight: 500;
             transition: color 0.3s;
         }
 
         nav ul li a:hover {
-            color: #1a73e8;
+            color: #00cc99; /* 変更: ホバーカラーをティールグリーンに */
         }
 
         /* セクション共通スタイル */
         section {
             padding: 60px 0;
             margin-bottom: 20px;
-            background-color: #ffffff;
+            background-color: #2d2d30; /* 変更: セクション背景色を暗く */
             border-radius: 8px; /* 角丸 */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 変更: 影を濃く */
         }
 
         h2 {
             font-size: 2em;
-            color: #1a73e8;
-            border-bottom: 3px solid #e0e0e0;
+            color: #00cc99; /* 変更: 見出し色をティールグリーンに */
+            border-bottom: 3px solid #00cc99; /* 変更: 下線の色をティールグリーンに */
             padding-bottom: 10px;
             margin-bottom: 30px;
             text-align: center;
@@ -91,19 +91,19 @@
         #intro {
             text-align: center;
             padding: 80px 0;
-            background-color: #ffffff;
+            background-color: #1e1e1e; /* 変更: 背景色をbodyと同じにし、一体感を出す */
             box-shadow: none; /* 影なし */
         }
 
         #intro h1 {
             font-size: 3em;
             margin-bottom: 10px;
-            color: #222;
+            color: #e0e0e0; /* 変更: タイトル色を明るく */
         }
 
         #intro p {
             font-size: 1.2em;
-            color: #666;
+            color: #aaaaaa; /* 変更: テキスト色を調整 */
             margin-bottom: 40px;
         }
 
@@ -112,12 +112,12 @@
             margin: 0 auto;
             text-align: left;
             padding: 20px;
-            border-left: 4px solid #1a73e8;
-            background-color: #f9f9f9;
+            border-left: 4px solid #00cc99; /* 変更: 縦線をティールグリーンに */
+            background-color: #3c3c3f; /* 変更: 引用ブロックの背景色を調整 */
         }
 
         .profile-text strong {
-            color: #d93025; /* 強調色 */
+            color: #ffc107; /* 変更: 強調色をアンバー/黄色に */
         }
 
         /* スキルセクション */
@@ -129,26 +129,26 @@
         }
 
         .skill-item {
-            background-color: #f9f9f9;
+            background-color: #3c3c3f; /* 変更: スキルカードの背景色を調整 */
             padding: 20px;
             border-radius: 6px;
-            border: 1px solid #eee;
+            border: 1px solid #444444; /* 変更: ボーダー色を調整 */
             transition: transform 0.3s;
         }
 
         .skill-item:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* 変更: 影を濃く */
         }
 
         .skill-item h3 {
             margin-top: 10px;
-            color: #1a73e8;
+            color: #00cc99; /* 変更: スキル見出しをティールグリーンに */
         }
 
         /* プロジェクトセクション（プレースホルダー） */
         .project-card {
-            border: 1px solid #e0e0e0;
+            border: 1px solid #444444; /* 変更: ボーダー色を調整 */
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 6px;
@@ -156,12 +156,17 @@
         }
 
         .project-card:hover {
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* 変更: 影を濃く */
         }
 
         .project-card h3 {
-            color: #222;
+            color: #e0e0e0; /* 変更: プロジェクト見出し色を明るく */
             margin-bottom: 10px;
+        }
+        
+        /* コンタクトリンクの色をテーマカラーに合わせる */
+        #contact a {
+            color: #00cc99 !important; /* 変更: メールリンクをティールグリーンに */
         }
 
         /* フッター */
@@ -169,9 +174,9 @@
             text-align: center;
             padding: 20px 0;
             margin-top: 40px;
-            color: #777;
-            background-color: #ffffff;
-            border-top: 1px solid #eee;
+            color: #aaaaaa; /* 変更: フッターテキスト色を調整 */
+            background-color: #2d2d30; /* 変更: フッター背景色を暗く */
+            border-top: 1px solid #444444; /* 変更: ボーダー色を調整 */
         }
     </style>
 </head>
@@ -264,7 +269,7 @@
                 <h2>📧 コンタクト</h2>
                 <p>私の経験やスキルにご興味をお持ちいただけましたら、お気軽にご連絡ください。</p>
                 <p style="font-size: 1.2em; font-weight: bold; margin-top: 15px;">
-                    Email: <a href="mailto:example@example.com" style="color: #1a73e8; text-decoration: none;">example@example.com</a>
+                    Email: <a href="mailto:example@example.com" style="color: #00cc99; text-decoration: none;">example@example.com</a>
                 </p>
             </div>
         </section>
