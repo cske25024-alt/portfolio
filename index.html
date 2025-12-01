@@ -15,8 +15,8 @@
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
-            color: #e0e0e0; /* 変更: 明るいテキスト色 */
-            background-color: #1e1e1e; /* 変更: 濃い背景色 */
+            color: #4a4a4a; /* 変更: やや濃い目のテキスト色 */
+            background-color: #fff8f0; /* 変更: 明るいクリーム色 */
         }
 
         /* コンテナの基本設定 */
@@ -28,12 +28,13 @@
 
         /* ヘッダー */
         header {
-            background-color: #2d2d30; /* 変更: 暗いヘッダー色 */
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); /* 変更: 影を濃く */
+            background-color: #ffffff; /* 白いヘッダー */
+            box-shadow: 0 4px 10px rgba(255, 107, 107, 0.1); /* 変更: 暖色系の影 */
             padding: 15px 0;
             position: sticky;
             top: 0;
             z-index: 1000;
+            border-radius: 0 0 12px 12px; /* 下部を丸く */
         }
 
         nav {
@@ -45,7 +46,7 @@
         .logo {
             font-size: 1.5em;
             font-weight: bold;
-            color: #00cc99; /* 変更: ブランドカラーをティールグリーンに */
+            color: #ff6b6b; /* 変更: ブランドカラーをコーラルピンクに */
             text-decoration: none;
         }
 
@@ -60,28 +61,28 @@
 
         nav ul li a {
             text-decoration: none;
-            color: #b0b0b0; /* 変更: ナビリンクの色を調整 */
+            color: #666; /* ナビリンクの色を調整 */
             font-weight: 500;
             transition: color 0.3s;
         }
 
         nav ul li a:hover {
-            color: #00cc99; /* 変更: ホバーカラーをティールグリーンに */
+            color: #ff6b6b; /* 変更: ホバーカラーをコーラルピンクに */
         }
 
         /* セクション共通スタイル */
         section {
             padding: 60px 0;
             margin-bottom: 20px;
-            background-color: #2d2d30; /* 変更: セクション背景色を暗く */
-            border-radius: 8px; /* 角丸 */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 変更: 影を濃く */
+            background-color: #ffffff; /* 白い背景 */
+            border-radius: 12px; /* 変更: 角丸を大きく */
+            box-shadow: 0 6px 15px rgba(255, 107, 107, 0.2); /* 変更: 暖色系の影を強調 */
         }
 
         h2 {
             font-size: 2em;
-            color: #00cc99; /* 変更: 見出し色をティールグリーンに */
-            border-bottom: 3px solid #00cc99; /* 変更: 下線の色をティールグリーンに */
+            color: #ff6b6b; /* 変更: 見出し色をコーラルピンクに */
+            border-bottom: 2px solid #ffab91; /* 変更: 下線の色をやわらかく */
             padding-bottom: 10px;
             margin-bottom: 30px;
             text-align: center;
@@ -91,19 +92,32 @@
         #intro {
             text-align: center;
             padding: 80px 0;
-            background-color: #1e1e1e; /* 変更: 背景色をbodyと同じにし、一体感を出す */
+            background-color: #fff8f0; /* 変更: bodyと同じ背景色 */
             box-shadow: none; /* 影なし */
+        }
+
+        .profile-image-container {
+            margin-bottom: 30px;
+        }
+
+        .profile-image {
+            width: 180px; /* 適切なサイズに調整 */
+            height: 180px; /* 適切なサイズに調整 */
+            border-radius: 50%; /* 丸い画像 */
+            object-fit: cover;
+            border: 5px solid #ff6b6b; /* 変更: ブランドカラーの枠線 */
+            box-shadow: 0 0 15px rgba(255, 107, 107, 0.4);
         }
 
         #intro h1 {
             font-size: 3em;
             margin-bottom: 10px;
-            color: #e0e0e0; /* 変更: タイトル色を明るく */
+            color: #333; /* 濃い目の黒 */
         }
 
         #intro p {
             font-size: 1.2em;
-            color: #aaaaaa; /* 変更: テキスト色を調整 */
+            color: #666; /* テキスト色を調整 */
             margin-bottom: 40px;
         }
 
@@ -111,13 +125,15 @@
             max-width: 800px;
             margin: 0 auto;
             text-align: left;
-            padding: 20px;
-            border-left: 4px solid #00cc99; /* 変更: 縦線をティールグリーンに */
-            background-color: #3c3c3f; /* 変更: 引用ブロックの背景色を調整 */
+            padding: 25px; /* 変更: パディングを少し大きく */
+            border-left: 5px solid #ff6b6b; /* 変更: 縦線をコーラルピンクに */
+            background-color: #ffffff; /* 変更: 白い背景 */
+            border-radius: 8px; /* 角丸 */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* やや控えめな影 */
         }
 
         .profile-text strong {
-            color: #ffc107; /* 変更: 強調色をアンバー/黄色に */
+            color: #e65100; /* 変更: 強調色をオレンジに */
         }
 
         /* スキルセクション */
@@ -129,44 +145,46 @@
         }
 
         .skill-item {
-            background-color: #3c3c3f; /* 変更: スキルカードの背景色を調整 */
+            background-color: #fcfcfc; /* 変更: スキルカードの背景色を調整 */
             padding: 20px;
-            border-radius: 6px;
-            border: 1px solid #444444; /* 変更: ボーダー色を調整 */
-            transition: transform 0.3s;
+            border-radius: 10px; /* 変更: 角丸を大きく */
+            border: 1px solid #ffcec7; /* 変更: ボーダー色をやわらかく */
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .skill-item:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* 変更: 影を濃く */
+            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3); /* 変更: 暖色系の影を強調 */
         }
 
         .skill-item h3 {
             margin-top: 10px;
-            color: #00cc99; /* 変更: スキル見出しをティールグリーンに */
+            color: #ff6b6b; /* 変更: スキル見出しをコーラルピンクに */
         }
 
-        /* プロジェクトセクション（プレースホルダー） */
+        /* プロジェクトセクション */
         .project-card {
-            border: 1px solid #444444; /* 変更: ボーダー色を調整 */
-            padding: 20px;
+            background-color: #fcfcfc; /* 変更: プロジェクトカードの背景色を調整 */
+            border: 1px solid #ffcec7; /* 変更: ボーダー色をやわらかく */
+            padding: 25px; /* 変更: パディングを少し大きく */
             margin-bottom: 20px;
-            border-radius: 6px;
-            transition: box-shadow 0.3s;
+            border-radius: 10px; /* 変更: 角丸を大きく */
+            transition: box-shadow 0.3s, transform 0.3s;
         }
 
         .project-card:hover {
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* 変更: 影を濃く */
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(255, 107, 107, 0.2); /* 変更: 暖色系の影を強調 */
         }
 
         .project-card h3 {
-            color: #e0e0e0; /* 変更: プロジェクト見出し色を明るく */
+            color: #333; /* プロジェクト見出し色 */
             margin-bottom: 10px;
         }
         
         /* コンタクトリンクの色をテーマカラーに合わせる */
         #contact a {
-            color: #00cc99 !important; /* 変更: メールリンクをティールグリーンに */
+            color: #ff6b6b !important; /* 変更: メールリンクをコーラルピンクに */
         }
 
         /* フッター */
@@ -174,9 +192,11 @@
             text-align: center;
             padding: 20px 0;
             margin-top: 40px;
-            color: #aaaaaa; /* 変更: フッターテキスト色を調整 */
-            background-color: #2d2d30; /* 変更: フッター背景色を暗く */
-            border-top: 1px solid #444444; /* 変更: ボーダー色を調整 */
+            color: #888; /* フッターテキスト色を調整 */
+            background-color: #ffffff; /* 白い背景 */
+            border-top: 1px solid #ffcec7; /* 変更: ボーダー色をやわらかく */
+            border-radius: 12px 12px 0 0; /* 上部を丸く */
+            box-shadow: 0 -4px 10px rgba(255, 107, 107, 0.1); /* 影 */
         }
     </style>
 </head>
@@ -185,7 +205,7 @@
     <header>
         <div class="container">
             <nav>
-                <a href="#intro" class="logo">Taro's Portfolio</a>
+                <a href="#intro" class="logo">Kentaro's Portfolio</a>
                 <ul>
                     <li><a href="#intro">自己紹介</a></li>
                     <li><a href="#skills">スキル</a></li>
@@ -199,6 +219,10 @@
     <main class="container">
 
         <section id="intro">
+            <div class="profile-image-container">
+                
+<img class="profile-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="水色のセキセイインコ">
+            </div>
             <h1>小倉 健太郎 (Kentaro Ogura)</h1>
             <p>**[所属大学・学部]** - チームの課題解決と実行力に強みを持つ学生</p>
 
@@ -269,7 +293,7 @@
                 <h2>📧 コンタクト</h2>
                 <p>私の経験やスキルにご興味をお持ちいただけましたら、お気軽にご連絡ください。</p>
                 <p style="font-size: 1.2em; font-weight: bold; margin-top: 15px;">
-                    Email: <a href="mailto:example@example.com" style="color: #00cc99; text-decoration: none;">example@example.com</a>
+                    Email: <a href="mailto:example@example.com" style="color: #ff6b6b; text-decoration: none;">example@example.com</a>
                 </p>
             </div>
         </section>
@@ -277,10 +301,8 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 〇〇 太郎 All Rights Reserved.</p>
+        <p>&copy; 2025 小倉 健太郎 All Rights Reserved.</p>
     </footer>
 
 </body>
 </html>
-
-
